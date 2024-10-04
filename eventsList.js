@@ -15,7 +15,7 @@ export default class Event {
         <button class="register">Register</button>
 </div>
         `;
-        document.querySelector('body').appendChild(this.eventWindow)
+        document.querySelector('#app').appendChild(this.eventWindow)
     }
 
 }
