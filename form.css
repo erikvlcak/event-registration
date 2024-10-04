@@ -1,6 +1,11 @@
 #registrationForm {
     background-color: white;
     padding: 2rem;
+}
+
+#registrationForm {
+    background-color: white;
+    padding: 2rem;
     display: flex;
 }
 
