@@ -1,6 +1,8 @@
-/* *{
-    border: solid red 1px;
-} */
+*{
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+
+}
 
 img {
     width: 400px;
@@ -9,11 +11,12 @@ img {
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
     border: 1px solid white;
+    border-radius: 10px;
 }
 
 #app {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: auto auto auto;
     gap: 3rem;
     justify-content: center;
 }
@@ -25,12 +28,12 @@ img {
     align-items: stretch;
     width: 400px;
     height: fit-content;
-    padding: 1rem;
+    padding: 1.5rem;
     gap: 1rem;
-    background-color: lightpink;
-    border-radius: 1rem;
-    border: 3px solid black;
-    box-shadow: 2px 2px 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
 .event-details {
@@ -40,8 +43,38 @@ img {
 }
 
 button {
-    padding: 1rem;
+    /* padding: 1rem;
     border-radius: 1rem;
     border: 2px solid black;
-    background-color: lightskyblue;
+    background-color: lightskyblue; */
+
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #28a745;
+    padding: 2rem 5rem;
+    height: 15rem;
+    margin-bottom: 5rem;
+}
+
+h2{
+    font-size: 34px;
+    color: white;
+}
+
+a{
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
 }

@@ -1,17 +1,39 @@
+const modalWindow = document.getElementById('modal-container');
+const modalButton = document.querySelector('.register');
+const submitButton = document.getElementById('submit-btn');
+
+
+function openModal() {
+  modalWindow.style.display = 'block';
+}
+
+
+modalButton.addEventListener('click', openModal);
+
+
+function closeModal() {
+  modalWindow.style.display = 'none';
+}
+
+
+submitButton.addEventListener('click', closeModal);
+
+
+window.addEventListener('click', function(event) {
+  if (event.target === modalWindow) {
+    closeModal();
+  }
+});
 
 
 
-
-
-
-
-// submit.addEventListener('click', (e) => {
-//     e.preventDefault();
-//     let firstName = document.getElementById('fname').value;
-//     let surName = document.getElementById('lname').value;
-//     let email = document.getElementById('email').value;
-//     let phone = document.getElementById('phone').value;
-//     let legalAge = document.getElementById('agree').value;
+submitButton.addEventListener('click', (e) => {
+    e.preventDefault();
+    let firstName = document.getElementById('fname').value;
+    let surName = document.getElementById('lname').value;
+    let email = document.getElementById('email').value;
+    let phone = document.getElementById('phone').value;
+    let legalAge = document.getElementById('agree').value;
     
 //     let postObject = {
 //         firstName: firstName,
